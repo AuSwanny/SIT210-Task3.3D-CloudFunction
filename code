@@ -1,0 +1,67 @@
+void setup() {
+    pinMode(D7, OUTPUT);
+    Particle.subscribe("pat", pat);
+    Particle.subscribe("wave", wave);
+}
+
+void loop() {
+}
+
+void pat(const char *event, const char *data) {
+    digitalWrite(D7, HIGH);
+    delay(100);
+    digitalWrite(D7, LOW);
+    delay(100);
+    digitalWrite(D7, HIGH);
+    delay(100);
+    digitalWrite(D7, LOW);
+    delay(100);
+    digitalWrite(D7, HIGH);
+    delay(100);
+    digitalWrite(D7, LOW);
+    delay(100);
+    digitalWrite(D7, HIGH);
+    delay(100);
+    digitalWrite(D7, LOW);
+    delay(100);
+    digitalWrite(D7, HIGH);
+    delay(100);
+    digitalWrite(D7, LOW);
+    delay(100);
+    digitalWrite(D7, HIGH);
+    delay(100);
+    digitalWrite(D7, LOW);
+    delay(100);
+    digitalWrite(D7, HIGH);
+    delay(100);
+    digitalWrite(D7, LOW);
+    delay(100);
+    digitalWrite(D7, HIGH);
+    delay(100);
+    digitalWrite(D7, LOW);
+    delay(100);
+    digitalWrite(D7, HIGH);
+    delay(100);
+    digitalWrite(D7, LOW);
+    delay(100);
+    
+}
+
+void wave(const char *event, const char *data) {
+    digitalWrite(D7, HIGH);
+    delay(850);
+    digitalWrite(D7, LOW);
+    delay(150);
+    digitalWrite(D7, HIGH);
+    delay(850);
+    digitalWrite(D7, LOW);
+    delay(150);
+    digitalWrite(D7, HIGH);
+    delay(850);
+    digitalWrite(D7, LOW);
+    delay(150);
+    digitalWrite(D7, HIGH);
+    delay(850);
+    digitalWrite(D7, LOW);
+    delay(150);
+}
